@@ -11,7 +11,7 @@ $(document).ready(function() {
 			counter = index + 1;
 			links = index + 1;
 			$('.map img').attr('src','images/'+counter+'.png');
-			$('.google img').attr('src','images/streetview/'+counter+'.png');
+			$('.google img').attr('src','images/streetview/'+counter+'.jpg');
 			$('.letter img').attr('src','images/letter/'+counter+'.png');
 		});
 	});
