@@ -8,6 +8,16 @@ $(document).ready(function() {
 		$(this).click(function(){
 			$('.state').removeClass('red');
 			$(this).addClass('red');
+
+			$('.greyhouse').removeClass('hide');
+			$('.greyhouse').addClass('show');
+			$('.redhouse').removeClass('show');
+			$('.redhouse').addClass('hide');
+			$('.greyhouse', this).removeClass('show');
+			$('.greyhouse', this).addClass('hide');
+			$('.redhouse', this).removeClass('hide');
+			$('.redhouse', this).addClass('show');
+
 			counter = index + 1;
 			links = index + 1;
 			$('.map img').attr('src','images/'+counter+'.png');
@@ -19,12 +29,6 @@ $(document).ready(function() {
 
 /* changes the house icon */
 
-	$('.redhouse').addClass('hide');
-
-	$('.info').click(function(){
-		$('.greyhouse').addClass('hide');
-		$('.redhouse').addClass('show');		
-	});
 
 /* makes the letter appear and disappear */
 	$('.info').click(function(){
