@@ -1,0 +1,497 @@
+/*////////// A L L //////////*/
+
+body {
+    font-family: helvetica;
+    font-weight: 200;
+    margin: 0;
+    background-color: #fffaf4; /* beige */
+}
+
+p {
+   color: #282828; /* grey */
+}
+
+a {
+    text-decoration: none;
+}
+
+strong {
+    font-style: italic;
+    font-weight: 200;
+}
+
+.show {display: block;}
+.hide {display: none;}
+
+/*////////// L A N D I N G  P A G E //////////*/
+
+.overflow {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.flex {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30vh;
+}
+
+.boxedd {
+    width: 35vw;
+    font-size: 3em;
+    color: #ff6f43;
+    text-align: center;
+}
+
+/*button*/
+.enter {
+    color: #fffaf4;
+    font-size: 2%;
+    letter-spacing: .2em;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 7%;
+    background-color: #132863;
+    opacity: .95;
+    margin-top: 3em;
+    z-index: 29382329;
+    opacity: .85;
+    transition: opacity .3s ease;
+}
+
+.enter:hover {
+    opacity: 1;
+}
+
+.backgroundtwo {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    z-index: 0;
+    cursor: default;
+}
+
+.maptwo img{
+    width: 120vw;
+}
+
+
+.slide {
+    animation: 40s ease-out infinite slide;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(-80%);
+  }
+}
+
+/*////////// H E A D E R //////////*/
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    position: absolute;
+    left: 2.5em;
+    top: 2em;
+    background-color: rgba(255, 250, 244, .9);
+    height: 40px;
+}
+
+.logo img {
+    width: 14em;
+    transition: opacity .2s ease;
+    margin-top: -5px;
+}
+
+.logo img:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+ul {
+    position: absolute;
+    right: 2.5em;
+    top: .2em;
+    list-style-type: none;
+    font-size: .9em;
+    color: #132863; /*blue*/
+    cursor: pointer;
+}
+
+li {
+    text-align: right;
+    margin-top: 1em;
+    padding-left: 2em; 
+    letter-spacing: .05em;
+}
+
+li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.here a {
+    border-bottom: 2px solid #132863;
+}
+
+.there a {
+    border-bottom: 2px solid transparent;
+    transition: 0.5s ease;
+}
+
+.there a:hover {
+    border-bottom: 2px solid #132863;
+}
+
+
+/*////////// F O O T E R //////////*/
+
+.footer {
+    position: fixed;
+    bottom: 2em;
+    right: 2.5em; 
+    width: 10px;
+    color: #ff6f43; /*red*/
+}
+
+.line {
+    height: 3.5em;
+    width: 5px;
+    border-right: 1px solid #ff6f43;
+}
+
+/*////////// H O M E //////////*/
+
+.box {
+    display: flex;
+    position: absolute;
+    margin-left: 3.3em;
+    margin-top: 6.5em;
+    z-index: 5;
+}
+
+.state {
+    font-size: 3.5vh;
+    line-height: .7em;
+    transition: color .3s ease;
+}
+
+.state:hover{
+     cursor: pointer;
+     color: #ff6f43;
+}
+
+.info img {
+    width: 14%;
+    margin-left: -4%;
+    position: absolute;
+    transform: translateY(-.2em);
+}
+
+.red {
+    color: #ff6f43;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+
+.map {
+    position: absolute;
+}
+
+.map img {
+    width: 100vw;
+}
+
+.writing {
+    display: none;
+}
+
+.letter {
+    position: fixed;
+    z-index: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin-left: 2.5em;
+    cursor: pointer;
+    margin-top: 3.5vh;
+}
+
+.letter img {
+    width: 27%;
+}
+
+.google {
+    width: 60vw;
+    height: 65vh;
+    margin-top: 7vh;
+    z-index: 200;
+    margin-left: 5em;
+    overflow: hidden;
+    mix-blend-mode: multiply;
+    opacity: .9;
+    transition: opacity .8s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google img {
+      width: 140%;
+}
+
+.google:hover {
+    opacity: .3;
+}
+
+/*////////// A B O U T + C O N T A C T //////////*/
+
+.container {
+    margin-top: 13vh;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: absolute;
+}
+
+.about,
+.contact {
+    height: 80%;
+    width: 40vw;
+    background-color: rgba(255, 250, 244, .95);
+    border: 1px solid #132863;
+    border-radius: .5%;
+    z-index: 1000;
+    overflow: hidden;
+    position: fixed;
+    display: none;
+    margin-left: 2.5em;
+}
+
+.contact .text {
+    margin-top: 15%;
+    margin-left: 27%;
+    line-height: 1.5em;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.tab {
+    padding-left: 35px;
+}
+
+.contact img {
+    width: 7%;
+    display: inline;
+    transform: translateY(.25em);
+}
+
+.show {
+    display: block;
+}
+
+.X {
+    position: absolute;
+    top: .25em;
+    right: .15em;
+    padding-right: .3em;
+    cursor: pointer;
+    color: #ff6f43;
+    font-size: 1.5em;
+}
+
+.text {
+    margin: 1.25em 1.5em 0em 2.25em;
+    line-height: 1.75em;
+    position: relative;
+    height: 100%;
+    overflow: auto;
+}
+
+.text::-webkit-scrollbar {
+    width: .25em;
+}
+
+.jenn {
+    width: 14%;
+    margin-top: -.5em;
+    margin-bottom: 3em;
+}
+
+
+/*////////// R E S P O N S I V E //////////*/
+
+/*Small screens*/
+@media only screen { } /* Define mobile styles */
+
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (max-width: 40em) { 
+    .logo {
+        left: 1.5em;
+    }
+
+    .logo img {
+        width: 13em;
+    }
+
+    ul {
+        font-size: .8em;
+    }
+
+    .footer {
+        right: 1.6em;
+    }
+
+    .box {
+        margin-left: 1.3em;
+    }
+
+    .map img {
+        height: 100vh;
+        width: auto;
+    }
+
+    .letter {
+        margin-left: 0;
+    }
+
+    .letter img {
+        width: 90%;
+    }
+
+    .google {
+        margin-top: 15vh;
+        width: 60%;
+        height: 60%;
+        margin-left: 0;
+    }
+
+    .google img {
+        width: auto;
+        height: 100vh;
+    }
+    .container {
+        align-items: center;
+        margin: 0;
+    }
+
+    .about,
+    .contact {
+        margin: 0;
+        height: 97%;
+        width: 92vw;
+    }
+
+    .boxedd {
+        width: 70%;
+        font-size: 2em;
+    }
+
+    .maptwo img{
+        width: 300vw;
+    }
+}
+
+// Medium screens
+@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+    .logo {
+        left: .8em;
+        top: 1em;
+        height: 33px;
+    }
+    .logo img {
+        width: 11em;
+    }
+
+    .box {
+        margin-left: 1.3em;
+        margin-top: 5em;
+    }
+
+    .google {
+        margin-top: 15vh;
+        margin-left: 2em;
+    }
+
+    ul {
+        font-size: .7em;
+        top: -.5em;
+    }
+
+    .letter {
+        margin-left: 0;
+    }
+
+    .letter img {
+        height: 90%;
+        width: auto;
+    }
+
+    .container {
+        align-items: center;
+        margin: 0;
+    }
+
+    .about,
+    .contact {
+        margin: 0;
+        height: 80%;
+        width: 80vw;
+        background-color: rgba(232, 235, 239, .95)
+    }
+
+    .text {
+        margin-left: 5em;
+        margin-right: 5em;
+    }    
+
+    .boxedd {
+        width: 60%;
+        font-size: 2.2em;
+    }
+
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Large screens
+@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
