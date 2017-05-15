@@ -38,7 +38,7 @@ $(document).ready(function() {
 /* makes About page appear and disappear */
 	$('.pop').click(function(){
 		$('.about').fadeToggle('show');
-		$('.contact').removeClass('show');
+		$('.contact').hide();
 	});
 
 	$('.about').click(function(){
@@ -48,7 +48,7 @@ $(document).ready(function() {
 /* makes Contact page appear and disappear */
 	$('.popit').click(function(){
 		$('.contact').fadeToggle('show');
-		$('.about').removeClass('show');
+		$('.about').hide();
 	});
 
 	$('.contact').click(function(){
