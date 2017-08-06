@@ -45,6 +45,7 @@ strong {
     font-size: 3em;
     color: #ff6f43;
     text-align: center;
+    z-index: 29382330;
 }
 
 /*button*/
@@ -218,9 +219,10 @@ li a {
 
 .map {
     position: absolute;
-}
-
-.map img {
+    background-image: url('images/1.png');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
     width: 100vw;
 }
 
@@ -284,7 +286,7 @@ li a {
 .about,
 .contact {
     height: 80%;
-    width: 40vw;
+    max-width: 80vw;
     background-color: rgba(255, 250, 244, .95);
     border: 1px solid #132863;
     border-radius: .5%;
@@ -293,6 +295,11 @@ li a {
     position: fixed;
     display: none;
     margin-left: 2.5em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 3em;
 }
 
 .contact .text {
@@ -375,11 +382,6 @@ li a {
         margin-left: 1.3em;
     }
 
-    .map img {
-        height: 100vh;
-        width: auto;
-    }
-
     .letter {
         margin-left: 0;
     }
@@ -402,13 +404,6 @@ li a {
     .container {
         align-items: center;
         margin: 0;
-    }
-
-    .about,
-    .contact {
-        margin: 0;
-        height: 97%;
-        width: 92vw;
     }
 
     .boxedd {
@@ -461,14 +456,6 @@ li a {
     .container {
         align-items: center;
         margin: 0;
-    }
-
-    .about,
-    .contact {
-        margin: 0;
-        height: 80%;
-        width: 80vw;
-        background-color: rgba(232, 235, 239, .95)
     }
 
     .text {

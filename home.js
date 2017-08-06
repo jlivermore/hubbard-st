@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 			counter = index + 1;
 			links = index + 1;
-			$('.map img').attr('src','images/'+counter+'.png');
+			$('.map').css('background-image','url(images/'+counter+'.png)');
 			$('.google img').attr('src','images/streetview/'+counter+'.png');
 			$('.letter img').attr('src','images/letter/'+counter+'.png');
 		});
