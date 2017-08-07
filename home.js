@@ -41,22 +41,35 @@ $(document).ready(function() {
 
 /* makes About page appear and disappear */
 	$('.pop').click(function(){
-		$('.about').fadeToggle('show');
+		$('.container').show();
+		$('.about').fadeIn();
 		$('.contact').hide();
 	});
 
-	$('.about').click(function(){
-		$('.about').fadeToggle('show');
+	$('.about').click(function(e){
+		e.stopPropagation();
 	});
 
 /* makes Contact page appear and disappear */
 	$('.popit').click(function(){
-		$('.contact').fadeToggle('show');
+		$('.container').show();
+		$('.contact').fadeIn();
 		$('.about').hide();
 	});
 
-	$('.contact').click(function(){
-		$('.contact').fadeToggle('show');
+	$('.contact').click(function(e){
+		e.stopPropagation();
 	});
+
+	$('.X').click(function() {
+		$('.container').hide();
+		$('.contact').hide();
+		$('.about').hide();
+	})
+	$('.container').click(function() {
+		$('.container').hide();
+		$('.contact').hide();
+		$('.about').hide();
+	})
 
 });

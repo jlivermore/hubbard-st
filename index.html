@@ -7,17 +7,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script>
 		$(document).ready(function () {
-			function fadeOut() {
-				$('.slide1').fadeOut(400, function() {
-					$('.slide1').css('top', 0);
-					$('.slide1').fadeIn();
-					slideUp();
-				});
-			}
 			function slideUp() {
-				$('.slide1').animate({
-					top: -1000,
-				}, 20000, 'linear', fadeOut);
+				$('.maptwo').animate({
+					'background-position-y': parseInt($('.maptwo').css('background-position-y')) - 1000,
+				}, 20000, 'linear', slideUp);
 			}
 			slideUp();
 		})
@@ -32,7 +25,6 @@
 
 	<div class="backgroundtwo">
 		<div class="maptwo">
-			<img class= "slide1" src='images/Background.png'>
 		</div>
 	</div>
 </div>

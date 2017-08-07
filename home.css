@@ -72,17 +72,21 @@ strong {
     display: flex;
     justify-content: center;
     width: 100vw;
-    z-index: 0;
+    height: auto;
     cursor: default;
 }
 
-.maptwo img{
-    width: 120vw;
+.maptwo {
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    margin: auto;
+    background-image: url('images/Background.png');
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position-y: 0;
 }
 
 
@@ -280,14 +284,16 @@ li a {
 /*////////// A B O U T + C O N T A C T //////////*/
 
 .container {
-    margin-top: 13vh;
+    margin-top: 9vh;
     display: flex;
     justify-content: center;
     width: 100vw;
     height: 100vh;
     flex-wrap: wrap;
-    overflow: hidden;
-    position: absolute;
+    overflow: scroll;
+    position: fixed;
+    display: none;
+    z-index: 12345;
 }
 
 .about,
@@ -297,9 +303,8 @@ li a {
     background-color: rgba(255, 250, 244, .95);
     border: 1px solid #132863;
     border-radius: .5%;
-    z-index: 1000;
+    z-index: 123456;
     overflow: hidden;
-    position: fixed;
     display: none;
     margin-left: 2.5em;
     position: absolute;
@@ -480,12 +485,24 @@ li a {
 // Large screens
 @media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
 
-@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+@media only screen and (min-width: 64.063em) and (max-width: 130em) { 
+
+    .about,
+    .contact {
+        max-width: 50vw; 
+    }
+
+    } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 
 // XLarge screens
-@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+@media only screen and (min-width: 130em) { } /* min-width 1441px, xlarge screens */
 
-@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+@media only screen and (min-width: 130em) and (max-width: 3000em) {
 
-// XXLarge screens
-@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
+    .about,
+    .contact {
+        max-width: 30vw; 
+    }
+
+ } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
